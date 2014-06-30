@@ -1,25 +1,31 @@
 <html>
 <head>
-	<title>TapRoot Coding Exercise</title>
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="form.js"></script>
+  <title>TapRoot Coding Exercise</title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="form.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Taproot</h1>
-	</header>
-	
-	<form action="other_parent.html">
-		<div class="kid_role0" id="default_role"></div>
-		<div class="kid_role1 prefill"></div>
-		<div class="kid_role2 prefill"></div>
-		<div class="kid_role3 prefill"></div>
+  <header>
+    <img src="taproot.png">
+  </header>
+  
+  <form action="other_parent.html">
+    <table>
+      <tbody class="kid_role0" id="default_role"></tbody>
+      <tbody class="kid_role1 prefill"></tbody>
+      <tbody class="kid_role2 prefill"></tbody>
+      <tbody class="kid_role3 prefill"></tbody>
 
-		<div class="role_submit">
-			<input type="submit" value="Next" id="btn" disabled="disabled">
-		</div>
-	</form>
+      <tr>
+        <td><input type="button" value="Back" onClick="history.go(-1); return true;"></td>
+        <td class="role_submit">
+          <button type="submit" id="btn" disabled="disabled">Next <i class="fa fa-arrow-right"></i></button>
+        </td>
+      </tr>
+    </table>
+  </form>
 
 </body>
 </html>

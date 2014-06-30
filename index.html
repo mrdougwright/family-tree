@@ -1,32 +1,33 @@
 <html>
 <head>
-	<title>TapRoot Coding Exercise</title>
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="form.js"></script>
+  <title>TapRoot Coding Exercise</title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="form.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Taproot</h1>
-	</header>
-	<form action="child_form.html">
-		<table>
-			<tbody>
-				<tr>
-					<td colspan="2">My name is</td>
-				</tr>
-				<tr>
-					<td><input name="first_name" type="text" placeholder="First Name"></td>
-					<td><input name="last_name" type="text" placeholder="Last Name"></td>
-				</tr>
-				<tr>
-					<td class="parent_submit">
-						<input type="submit" value="Next" id="btn" disabled="disabled">
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</form>
+  <header>
+    <img src="taproot.png">
+  </header>
+  <form action="child_form.html">
+    <table>
+      <tbody>
+        <tr>
+          <td colspan="2">My name is</td>
+        </tr>
+        <tr>
+          <td><input name="first_name" type="text" placeholder="First Name" onfocus="this.placeholder = ''"></td>
+          <td><input name="last_name" type="text" placeholder="Last Name" onfocus="this.placeholder = ''"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="parent_submit">
+            <button class='first' type="submit" id="btn" disabled="disabled">Next <i class="fa fa-arrow-right"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
 
 </body>
 </html>

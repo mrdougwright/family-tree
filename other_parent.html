@@ -1,24 +1,30 @@
 <html>
 <head>
-	<title>TapRoot Coding Exercise</title>
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="form.js"></script>
+  <title>TapRoot Coding Exercise</title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="form.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Taproot</h1>
-	</header>
-	<p>Second Parent</p>
-	<form action="final_page.html">
-  	<div class="parent_role0" id="default_role"></div>
-		<div class="parent_role1 prefill"></div>
-		<div class="parent_role2 prefill"></div>
-		<div class="parent_role3 prefill"></div>
-		<div class="other_parent_submit">
-			<input type="submit" value="Next" id="btn" disabled="disabled">
-		</div>
+  <header>
+    <img src="taproot.png">
+  </header>
+  <form action="final_page.html">
+    <table>
+      <tr><td colspan='2'><h2>Second Parent</h2></td></tr>
+      <tbody class="parent_role0" id="default_role"></tbody>
+      <tbody class="parent_role1 prefill"></tbody>
+      <tbody class="parent_role2 prefill"></tbody>
+      <tbody class="parent_role3 prefill"></tbody>
+      <tr>
+        <td><input type="button" value="Back" onClick="history.go(-1); return true;"></td>
+        <td class="other_parent_submit">
+          <button type="submit" id="btn" disabled="disabled">Next <i class="fa fa-arrow-right"></i></button>
+        </td>
+      </tr>
+      <tr class="skip-step"><td colspan='2'><a href="final_page.html">Skip This Step</a></td></tr>
+    </table>
   </form>
-  <a href="final_page.html">Skip This Step</a>
 </body>
 </html>
