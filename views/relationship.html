@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>TapRoot Coding Exercise</title>
+  <script type="text/javascript" src="../javascripts/jquery.js"></script>
+  <script type="text/javascript" src="../javascripts/form.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styling/style.css">
+</head>
+<body>
+  <header>
+    <img src="../styling/taproot.png">
+  </header>
+  
+  <form action="other_parent.html">
+    <table>
+      <tbody class="kid_role0" id="default_role"></tbody>
+      <tbody class="kid_role1 prefill"></tbody>
+      <tbody class="kid_role2 prefill"></tbody>
+      <tbody class="kid_role3 prefill"></tbody>
+
+      <tr>
+        <td><input type="button" value="Back" onClick="history.go(-1); return true;"></td>
+        <td class="role_submit">
+          <button type="submit" id="btn" disabled="disabled">Next <i class="fa fa-arrow-right"></i></button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

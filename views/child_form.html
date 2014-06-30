@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>TapRoot Coding Exercise</title>
+  <script type="text/javascript" src="../javascripts/jquery.js"></script>
+  <script type="text/javascript" src="../javascripts/form.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styling/style.css">
+</head>
+<body>
+  <header>
+    <img src="../styling/taproot.png">
+  </header>
+  
+  <form action="relationship.html">
+    <table>
+      <tbody>
+        <tr>
+          <td colspan="2">
+            I have
+            <select id="child_select">
+              <option value="one">one</option>
+              <option value="two">two</option>
+              <option value="three">three</option>
+              <option value="four">four</option>
+            </select>
+            <span class="kid_span">kid</span> named
+          </td>
+        </tr>
+        <tr class="kid_name0">
+          <td><input name='first_name' type='text' placeholder='First Name'></td>
+          <td><input name='last_name'  type='text' placeholder='Last Name'></td>
+        </tr>
+        <tr class="kid_name1"></tr>
+        <tr class="kid_name2"></tr>
+        <tr class="kid_name3"></tr>
+        <tr>
+          <td><input type="button" value="Back" onClick="history.go(-1); return true;"></td>
+          <td class="child_submit">
+            <button type="submit" id="btn" disabled="disabled">Next <i class="fa fa-arrow-right"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+
+</body>
+</html>
